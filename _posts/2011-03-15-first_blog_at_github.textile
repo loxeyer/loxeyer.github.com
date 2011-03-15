@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "tmdb_party 0.9.0 Released"
-tags: [ruby, gem, movies, tmdb_party]
+title: "博客第一篇"
+tags: [first,leezhong]
 author_name: Tony 
 author_uri: http://twitter.com/loxeyer
 ---
