@@ -1,0 +1,257 @@
+body {
+	margin:10px;
+	padding:0px;
+	text-align:center;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:16px;
+}
+
+body, a {
+	color:#333;
+}
+
+a {
+  color:#000;
+}
+
+
+
+a:hover {
+	text-decoration:none;
+}
+
+h1, h2, h3, h4 {
+	margin-bottom:10px;
+}
+
+h2 {
+  line-height:28px;
+  margin-top:10px;
+}
+
+p {
+	margin-top:10px;
+}
+
+h1, h2, h3, h1 a, h2 a, h3 a, a.read-more {
+	color: #000;
+}
+
+img {
+	border:none;
+}
+
+#banner {
+	margin:20px 0px;
+/*	border-bottom:2px solid #ccc;*/
+}
+
+#banner h1, #banner h3{
+	margin: 10px 0px 0px 0px;
+	float:left;
+}
+
+#banner h3 {
+	font-size:110%;
+	padding-left:10px;
+	margin-bottom:10px;
+	color: #333;
+}
+
+#banner h1 a {
+	text-decoration:none;
+}
+
+#banner h1 a:hover {
+	text-decoration:underline;
+}
+
+#banner form {
+	float:right;
+	margin-top:15px;
+}
+#banner ul li, #banner ul, #banner ul li a {
+	background-color:#333;
+	padding:5px;
+}
+
+#banner ul {
+	margin: 5px 0px 0px 0px;
+	border-top:solid 5px #333;
+	padding-bottom:10px;
+	padding-top:0px;
+}
+
+#banner ul li {
+	display:inline;
+	float:left;
+	list-style-type: none;
+}
+
+#banner ul li a {
+	color:#fff;
+	text-decoration:none;
+}
+
+#banner ul li a:hover, 
+body.archives #banner li.archives a,
+body.blog #banner li.blog a, 
+body.resume #banner li.resume a,
+body.about #banner li.about a {
+	color:#000;
+	background-color:#fff;
+	text-decoration:none;
+}
+
+#content, #top, #bottom {
+	text-align:left;
+	margin:auto;
+	width:1000px;
+}
+
+#main {
+    float:left;
+    width: 70%;
+}
+
+#page a {
+  color:#2244BB;
+}
+
+#page h2 a {
+  color:#000;
+}
+
+#index h2 {
+  margin-top:5px;
+}
+
+#index .post {
+  margin-bottom:20px;
+}
+
+#index .post + .post {
+  border-top:solid 1px #999;
+  padding-top:15px;
+}
+
+#related li {
+  list-style:none;
+}
+
+.post, .excerpt {
+	line-height:20px;
+}
+
+.paging {
+	margin: 20px 0px;
+}
+
+.paging .newer {
+	float:right;
+}
+
+.paging .older {
+	float:left;
+}
+
+.clear {
+	clear:both;
+	height:0px;
+	line-height:0px;
+}
+
+#comments {
+	padding-top:10px;
+}
+
+#sidebar {
+    font-size: 0.9em;
+    float:right;
+    width: 25%;
+}
+
+#sidebar ul {
+    padding-left:15px;
+}
+
+#sidebar li {
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-bottom: 5px;
+}
+
+#sidebar ul#links {
+	margin:0px;
+	list-style-type: none;
+}
+
+#sidebar ul#links li {
+	padding:4px 0 4px 28px;
+}
+
+#sidebar ul#links li.github {
+	background:transparent url(/images/github.png) no-repeat scroll 4px 2px;
+}
+#sidebar ul#links li.twitter {
+	background:transparent url(/images/twitter.png) no-repeat scroll 4px 2px;
+}
+#sidebar ul#links li.facebook {
+	background:transparent url(/images/facebook.png) no-repeat scroll 4px 2px;
+}
+#sidebar ul#links li.reader {
+	background:transparent url(/images/reader.png) no-repeat scroll 4px 2px;
+}
+#sidebar ul#links li.linkedin {
+	background:transparent url(/images/linkedin.png) no-repeat scroll 4px 2px;
+}
+
+#license {
+    clear:both;
+}
+
+.excerpt {
+}
+
+.meta {
+  display: block;
+	background-color:#EEEEEE;
+	border:1px solid #CCCCCC;
+	color:#666666;
+	padding:5px;
+	margin-top:16px;
+}
+
+#bottom {
+	border-top:2px solid #CCCCCC;
+	margin:10px auto;
+	padding-top:5px;
+}
+
+.thumbnails img, img.thumbnails {
+	max-width:100px;
+	max-width:100px;
+	padding:5px;
+	float:left;
+}
+
+a.pdf {
+	padding:4px 0 4px 28px;
+	background:transparent url(/images/pdf.gif) no-repeat scroll 4px 2px;
+}
+
+#resume {
+	width:658px;
+}
+
+#resume p {
+	margin:0px;
+}
+
+#resume ul {
+	margin:0px;
+}
+
+#resume li p {
+	margin:0px;
+}
