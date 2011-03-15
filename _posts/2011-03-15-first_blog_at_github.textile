@@ -1,0 +1,22 @@
+---
+layout: post
+title: "tmdb_party 0.9.0 Released"
+tags: [ruby, gem, movies, tmdb_party]
+author_name: Tony 
+author_uri: http://twitter.com/loxeyer
+---
+
+
+
+
+Github真的很好用,难怪李忠天天说呢,不错,很喜欢这种免费的午餐,第一篇博客写下李忠吧.
+
+我的同事李忠热爱打篮球,乒乓球也不错哦,对计算机的痴狂能够传染身边的每个人,每天坐在他对面,看到他很欣慰,好像有一种精神在陪伴,想要更多了解他的朋友关注他的<a href="http://www.leezhong.com">博客</a>.
+
+以前的CAKEPHP视频教程网站,由于下载流量过大被关闭,因此把服务放在GIT上,谢谢谅解.
+
+
+
+
+
+
