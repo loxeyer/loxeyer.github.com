@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "干净的删除mysql"
+title: "ubuntu删除mysql"
 tags: [mysql]
 author_name: Tony 
 author_uri: http://twitter.com/loxeyer
