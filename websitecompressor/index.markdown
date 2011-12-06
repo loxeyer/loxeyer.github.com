@@ -17,16 +17,11 @@ Under the hood it utilizes the famous [HtmlCompressor](http://code.google.com/p/
 
 ## Download
 
-- 2011/08/21: [websitecompressor-0.4.zip](https://github.com/downloads/bmeurer/websitecompressor/websitecompressor-0.4.zip)
-- 2011/07/28: [websitecompressor-0.2.zip](https://github.com/downloads/bmeurer/websitecompressor/websitecompressor-0.2.zip)
-- 2011/07/27: [websitecompressor-0.1.zip](https://github.com/downloads/bmeurer/websitecompressor/websitecompressor-0.1.zip)
 
 Note that you need to have [Java SE](http://www.oracle.com/technetwork/java/javase/downloads/index.html) 1.5 or better (Java SE 1.6 recommended) installed in order to use the WebsiteCompressor.
 
 
 ## Usage
-
-Download the [latest release](https://github.com/downloads/bmeurer/websitecompressor/websitecompressor-{{ page.version }}.zip), extract the archive, and copy all JAR files from the archive to your website project.
 
 Usage: `java -jar websitecompressor-{{ page.version }}.jar [options] [files]`
 
@@ -80,5 +75,4 @@ WebsiteCompressor performs all compression in-place, so do not run WebsiteCompre
 
 ## License
 
-WebsiteCompressor is licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0). See the [LICENSE](http://github.com/bmeurer/websitecompressor/raw/master/LICENSE) file for details.
-
+WebsiteCompressor is licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).

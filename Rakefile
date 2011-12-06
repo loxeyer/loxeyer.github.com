@@ -26,7 +26,7 @@ task :deploy => [:compress] do
 	puts '* Deploying website'
 	system 'rsync -rtzh --delete --exclude .ssh _site/ strato:'
 	puts '* Pinging Google about the sitemap'
-	Net::HTTP.get('www.google.com', '/webmasters/tools/ping?sitemap=' + URI.escape('http://benediktmeurer.de/sitemap.xml'))
+	Net::HTTP.get('www.google.com', '/webmasters/tools/ping?sitemap=' + URI.escape('http://www.zhuyinghao.com/sitemap.xml'))
 end
 
 task :default => [:server]
