@@ -2,10 +2,10 @@ markdown: rdiscount
 pygments: true
 permalink: pretty
 url: http://www.zhuyinghao.com
-title:Truman 
+title: Truman 
 description: Personal website of tony.
-author:zhuyinghao 
-email:loxeyer@gmail.com
+author: tony 
+email: loxeyer@gmail.com
 github: loxeyer
 twitter: loxeyer
 facebook: loxeyer
