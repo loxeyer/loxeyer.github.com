@@ -22,7 +22,7 @@ belink.com/test和belink.com/demo是个性域名
 
 支持thinkphp重写的nginx的配置如下：
 
-{% highlight %}
+{% highlight console %}
 server {
     listen 80; 
     server_name *.auth.com;
@@ -65,7 +65,7 @@ server {
 
 因此可采用框架内部的路由机制来实现，要访问belink.com/gaolin时，首先会检测系统根目录是否有这样一个文件夹，并有索引文件，其次会检测是否有gaolin这样一个控制器，最后会用正则把gaolin匹配到/user/view/gaolin，实现:
 
-{% highlight %}
+{% highlight console %}
 $route->set('profile', '<domain>', array('domain' => '[0-9a-zA-Z]+'))
  	->defaults(array(
  	    'controller' => 'user',
