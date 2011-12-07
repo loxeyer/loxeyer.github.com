@@ -11,9 +11,9 @@ tags: [osx, mac, lion]
 **看个例子**
 
 进入到git项目的根目录，运行下面的命令，并在当前项目中创建latest.tgz压缩包
-
+{% highlight %}
 git archive master | gzip > latest.tgz
-
+{% endhighlight %}
 **git导出帮助**
 
 查看git命令 git help
