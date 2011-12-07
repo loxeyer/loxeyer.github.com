@@ -1,0 +1,50 @@
+---
+layout: post
+title: Lion
+tags: [osx, mac, lion]
+---
+
+So I'm trying to get used to [OS X Lion](http://www.apple.com/macosx/)
+now. One of the first things I noticed was that the <code>Library</code>
+folder does no longer show up in Finder by default. Of course that was
+rather trivial to fix using the following command:
+
+{% highlight console %}
+$ chflags nohidden ~/Library
+{% endhighlight %}
+
+One really nice feature in Lion is that new tabs in
+[Terminal.app](http://en.wikipedia.org/wiki/Apple_Terminal) now inherit the
+current working directory from the tab from which they were opened - something
+I implemented in [Xfce's Terminal](http://www.xfce.org/projects/terminal)
+seven years ago, BTW. Looks like this is implemented by parsing the path
+displayed in the title bar, which can have unexpected results when combined
+with <code>ssh</code> sessions, since the path in the title is actually set
+via the (remote) shell. In addition the title bar of Terminal windows
+now provides the same handles as the title bar in Finder windows, which is
+pretty handy.
+
+Unfortunately Apple decided to kick Spaces and replace it with [Mission
+Control](http://www.apple.com/macosx/whats-new/mission-control.html). This
+by itself is not necessarily bad, but now there's no way to get that two
+dimensional workspace layout back, at least until Apple decides
+to fix that shortcoming. I've also noticed that the order of the workspaces
+seems to change under some (obscure) conditions, which is even worse. Maybe
+I'm just getting old, but until now I was unable to figure out what triggers
+this rearrangement - not what I'd call intuitive.
+
+**Update 1:** Lion also says *bye bye* to Microsoft Office for Mac 2004, since
+<a href="http://en.wikipedia.org/wiki/Rosetta_(software)">Rosetta</a> is not
+available for Mac OS X 10.7.
+
+**Update 2:** Make sure you don't miss the [Mac OS X 10.7 Lion
+review](http://arstechnica.com/apple/reviews/2011/07/mac-os-x-10-7.ars/)
+by [ars technica](http://arstechnica.com)'s [John
+Siracusa](http://arstechnica.com/author/john-siracusa/).
+
+**Update 3:** Well, I am old... the fix for that *Mission Control feature* that
+drove me nuts is obvious. In the **Mission Control** preference pane, disable
+the **Automatically rearrange spaces based on most recent use** option. Even
+if I was too blind to discover this earlier, it's nevertheless a really bad
+default. Out of 100 Mac users, how many would their workspaces to rearrange
+*magically*?
