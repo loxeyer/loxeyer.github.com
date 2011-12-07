@@ -2,7 +2,7 @@
 layout: post
 title: 如何导出一个git项目 
 tags: [osx, mac, lion]
-
+---
 如何像svn export一样导出一个项目呢？
 
 没有git export命令，导出项目可用git archive命令，默认情况下，它是导出一个tar压缩包。
