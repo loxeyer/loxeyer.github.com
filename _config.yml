@@ -1,6 +1,6 @@
 markdown: rdiscount
-pygments: true
-permalink: pretty
+pygments: false
+permalink: none
 url: http://www.zhuyinghao.com
 title: Truman
 description: Personal website of tony.
