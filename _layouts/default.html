@@ -37,6 +37,9 @@
   <!-- jQuery -->
   <script src="/js/jquery.min.js" type="text/javascript"></script>
 
+  <!-- socialshareprivacy jQuery Plugin -->
+  {% include socialshareprivacy.html %}
+
   <!--[if lt IE 8]>
     <link type="text/css" rel="stylesheet" media="projection,screen" href="/css/ie.css" />
   <![endif]--> 
@@ -58,6 +61,7 @@
     {% include sidebar.html %}
     {% include footer.html %}
   </div>
+  {% include disqus.html %}
   {% include ga.html %}
 </body>
 
