@@ -9,7 +9,7 @@ now. One of the first things I noticed was that the <code>Library</code>
 folder does no longer show up in Finder by default. Of course that was
 rather trivial to fix using the following command:
 
-{% highlight console %}
+{% highlight %}
 $ chflags nohidden ~/Library
 {% endhighlight %}
 
