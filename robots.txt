@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://benediktmeurer.de/sitemap.xml
+
