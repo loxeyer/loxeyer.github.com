@@ -70,3 +70,8 @@ tags: [freedom]
 
 在生活中我们不但要维护自己的自由（不做奴隶），还要尊重他人的自由（不做奴隶主），更要反对他人之间的强制（坚持废奴主义）
 
+
+参考:
+
+http://www.tianya.cn/publicforum/Content/no01/1/161745.shtml
+
