@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 消极自由versus消极自由
+title: 积极自由versus消极自由
 tags: [freedom]
 ---
 To have real freedom, and individual must:
