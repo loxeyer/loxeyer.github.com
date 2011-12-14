@@ -3,6 +3,13 @@ layout: post
 title: 消极自由versus消极自由
 tags: [freedom]
 ---
+To have real freedom, and individual must:
+
+1. Not be prevented from acting on his/her will(i.e. he/she must have traditional negative freedom).
+
+
+2. Possess the resources or capacities actually to carry out his/her will.
+
 
 ***以赛亚·伯林***
 
