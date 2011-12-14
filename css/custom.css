@@ -32,17 +32,22 @@ article {
     margin: 20px 0;
 }
 .post h2 a {
-    color: #597A9B;
+    color: #850505;
     font-size: 36px;
     margin: 20px 0;
 }
 .post h3 {
-    font-size: 28px;
+    font-size: 25px;
     margin: 20px 0;
+	border-color: #E8E8E8;
+    border-style: double none;
+	border-width: 3px;
+
 }
 .post h3 a {
-    color: #850505;
-    font-size: 28px;
+    color: #597A9B;
+    font-size: 36px;
+    font-size: 25px;
     margin: 20px 0;
 }
 .post .postbody {
