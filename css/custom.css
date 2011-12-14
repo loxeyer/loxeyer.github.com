@@ -27,16 +27,16 @@ article {
 .post {
     font-size: 1.2em;
 }
-..post h2 {
+..post h3 {
     font-size: 36px;
     margin: 20px 0;
 }
-.post h2 a {
+.post h3 a {
     color: #850505;
     font-size: 36px;
     margin: 20px 0;
 }
-.post h3 {
+.post h4 {
     font-size: 25px;
     margin: 20px 0;
 	border-color: #E8E8E8;
@@ -44,7 +44,7 @@ article {
 	border-width: 3px;
 
 }
-.post h3 a {
+.post h4 a {
     color: #597A9B;
     font-size: 36px;
     font-size: 25px;
