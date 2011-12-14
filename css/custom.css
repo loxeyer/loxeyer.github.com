@@ -27,13 +27,23 @@ article {
 .post {
     font-size: 1.2em;
 }
-.post h3 {
+..post h2 {
     font-size: 36px;
+    margin: 20px 0;
+}
+.post h2 a {
+    color: #597A9B;
+    font-size: 36px;
+    margin: 20px 0;
+}
+.post h3 {
+	background: none repeat scroll 0 0 #eeeeee;
+    font-size: 28px;
     margin: 20px 0;
 }
 .post h3 a {
     color: #597A9B;
-    font-size: 36px;
+    font-size: 28px;
     margin: 20px 0;
 }
 .post .postbody {
