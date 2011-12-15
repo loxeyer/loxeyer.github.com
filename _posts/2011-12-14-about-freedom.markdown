@@ -80,6 +80,8 @@ To have real freedom, and individual must:
 
 
 参考:
+<http://www.tianya.cn/publicforum/Content/no01/1/161745.shtml>
+
 
 [http://www.tianya.cn/publicforum/Content/no01/1/161745.shtml](http://www.tianya.cn/publicforum/Content/no01/1/161745.shtml)
 
