@@ -1,6 +1,6 @@
 ---
 layout: post
-title:悖论 
+title: 悖论 paradox
 tags: [paradox]
 ---
 
