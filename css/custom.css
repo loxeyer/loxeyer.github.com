@@ -42,8 +42,6 @@ article {
 	border-color: #E8E8E8;
     border-style: double none;
 	border-width: 3px;
-
-
 }
 .post h3 a {
     color: #597A9B;
@@ -53,10 +51,6 @@ article {
 .post h4 {
     font-size: 20px;
     margin: 20px 0;
-	border-color: #E8E8E8;
-    border-style: double none;
-	border-width: 3px;
-
 }
 .post h4 a {
     color: #597A9B;
