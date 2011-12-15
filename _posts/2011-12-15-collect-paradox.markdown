@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 悖论 paradox
+title: 悖论大扫盲
 tags: [paradox]
 ---
 

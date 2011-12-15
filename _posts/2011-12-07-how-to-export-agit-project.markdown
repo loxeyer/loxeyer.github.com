@@ -8,7 +8,7 @@ tags: [git]
 
 没有git export命令，导出项目可用git archive命令，默认情况下，它是导出一个tar压缩包。
 
-**看个例子**
+###看个例子###
 
 进入到git项目的根目录，运行下面的命令，并在当前项目中创建latest.tgz压缩包
 
@@ -16,7 +16,7 @@ tags: [git]
 git archive master | gzip > latest.tgz
 {% endhighlight %}
 
-**git导出帮助**
+###git导出帮助###
 
 查看git命令 git help
 

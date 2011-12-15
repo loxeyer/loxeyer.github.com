@@ -4,14 +4,14 @@ title: 在nginx下设置二级域名
 tags: [nginx]
 ---
 
-** 概念 **
+### 概念 ###
 
 这两个概念很容易混淆，看个例子区分一下二者的定义：
 
 test.zhuyinghao.com和demo.zhuyinghao.com是二级域名
 zhuyinghao.com/test和zhuyinghao.com/demo是个性域名
 
-** 二级域名的实现 **
+### 二级域名的实现 ###
 
 '''思路'''：通过nginx的rewrite模块，把xxx.zhuyinghao.com指向到zhuyinghao.com/xxx，xxx是可变的，每次增加二级域名时修改hosts文件即可。在hosts中增加一行:
 
@@ -26,9 +26,9 @@ zhuyinghao.com/test和zhuyinghao.com/demo是个性域名
 {% highlight console %}
 server {
     listen 80; 
-    server_name *.auth.com;
+    server_name #.auth.com;
 
-    if ( $host ~* (\b(?!www\b)\w+)\.\w+\.\w+ ) { 
+    if ( $host ~# (\b(?!www\b)\w+)\.\w+\.\w+ ) { 
         set $test $1; 
     }   
 
@@ -38,14 +38,14 @@ server {
 
     if (!-e $request_filename)
     {   
-        rewrite ^/(.*)$ /index.php/$1 last;
+        rewrite ^/(.#)$ /index.php/$1 last;
         break;
     }   
 
-    location ~ .*\.php(.*)$ {
+    location ~ .#\.php(.#)$ {
         fastcgi_pass 127.0.0.1:9000;
         fastcgi_index index.php;
-        fastcgi_split_path_info ^(.+\.php)(.*)$;
+        fastcgi_split_path_info ^(.+\.php)(.#)$;
         include fastcgi_params;
         fastcgi_param PATH_INFO $fastcgi_path_info;
     }   
