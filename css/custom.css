@@ -33,7 +33,7 @@ article {
 }
 .post h2 a {
     color: #597A9B;
-    font-size: 30px;
+    font-size: 36px;
     margin: 20px 0;
 }
 .post h3 {
@@ -45,7 +45,7 @@ article {
 }
 .post h3 a {
     color: #597A9B;
-    font-size: 30px;
+    font-size: 28px;
     margin: 20px 0;
 }
 .post h4 {
@@ -53,6 +53,7 @@ article {
     margin: 20px 0;
 }
 .post h4 a {
+    font-size: 20px;
     color: #597A9B;
     margin: 20px 0;
 }
