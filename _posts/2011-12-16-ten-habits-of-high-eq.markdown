@@ -91,3 +91,5 @@ As much as possible, they choose to associate only with bother people with high 
 避免与低智商的人相处，但要尊重他们的感受
 
 尽一切可能，他们选择与高智商的人相处
+
+参考：<http://peterfox.com.au/mind_emotional_intelligence.htm>
