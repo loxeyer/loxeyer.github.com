@@ -13,7 +13,7 @@ tags: [EQ,翻译]
 
 
 
--说出对他人的感受要比指责别人的身份地位要好
+说出对他人的感受要比指责别人的身份地位要好
 
 我等不及了 vs 这太搞笑了
 
@@ -21,7 +21,7 @@ tags: [EQ,翻译]
  
 我有点害怕 vs 你就是一个大傻瓜
 
-####2. Distinguish between thoughts and feelings. #### 
+2. Distinguish between thoughts and feelings. 
 Thoughts: I feel like…& I feel as if…. & I feel that
 Feelings: I feel: (feeling word)
 
