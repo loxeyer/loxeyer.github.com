@@ -4,12 +4,12 @@ title: 高情商者的十大习惯(译)
 tags: [EQ,翻译]
 ---
 
-####1. Label their feelings, rather than labelling people or situations.####
-+"I feel impatient." vs. "This is ridiculous"
+1. Label their feelings, rather than labelling people or situations.
+"I feel impatient." vs. "This is ridiculous"
 
-+"I feel hurt and bitter". vs. "You are an insensitive jerk."
+"I feel hurt and bitter". vs. "You are an insensitive jerk."
 
--"I feel afraid." vs. "You are driving like a idiot."
+"I feel afraid." vs. "You are driving like a idiot."
 
 
 
