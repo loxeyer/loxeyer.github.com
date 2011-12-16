@@ -5,15 +5,15 @@ tags: [EQ,翻译]
 ---
 
 ####1. Label their feelings, rather than labelling people or situations.####
-"I feel impatient." vs. "This is ridiculous"
++"I feel impatient." vs. "This is ridiculous"
 
-"I feel hurt and bitter". vs. "You are an insensitive jerk."
++"I feel hurt and bitter". vs. "You are an insensitive jerk."
 
-"I feel afraid." vs. "You are driving like a idiot."
+-"I feel afraid." vs. "You are driving like a idiot."
 
 
 
-说出对他人的感受要比指责别人的身份地位要好
+-说出对他人的感受要比指责别人的身份地位要好
 
 我等不及了 vs 这太搞笑了
 
