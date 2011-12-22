@@ -38,9 +38,8 @@ blockquote, q {
 	quotes: none;
 }
 blockquote {
-
 border: 1px dashed #BAD4E8;
-
+background-color: #FAFCFF;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
