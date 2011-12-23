@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 由圣诞节引申至神学
+title: 圣诞节的神学
 tags: [dict]
 ---
 
