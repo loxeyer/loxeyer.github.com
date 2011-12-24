@@ -20,7 +20,7 @@ tags: [training]
 
 这个理论还提醒人们：不要把所有的优点完全暴露出来，要学会低调做人。
 
-![ice hill](ice_hill.jpg)
+![ice hill](/images/ice_hill.jpg)
 
 ###抱怨太多
 
@@ -64,7 +64,7 @@ tags: [training]
 
 ###用不同视角看问题
 
-![frog and horse](frog_horse.jpg)
+![frog and horse](/images/frog_horse.jpg)
 ###监督
 
 有位同事说到上司要监督小明的工作完成进度，用跟进一词更合理些，监督工作在软件领域会适得其反，真正的程序员是喜欢自由的。因此打造精英团队的重要性变得尤其重要。（小明是秘书）
