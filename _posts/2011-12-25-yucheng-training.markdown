@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 宇信的入职培训
+title: 宇信入职培训
 tags: [training]
 ---
 
