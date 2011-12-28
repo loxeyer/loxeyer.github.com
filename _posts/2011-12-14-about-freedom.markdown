@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 积极自由versus消极自由
-tags: [freedom]
+tags: [thinking]
 ---
 To have real freedom, and individual must:
 

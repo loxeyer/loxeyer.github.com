@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 在nginx下设置二级域名 
-tags: [nginx]
+tags: [tech]
 ---
 
 ### 概念 ###

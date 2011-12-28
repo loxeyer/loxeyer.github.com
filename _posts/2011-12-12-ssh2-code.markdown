@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ssh2 class on php 
-tags: [ssh php]
+tags: [tech]
 ---
 
 曾经写过的一个ssh2类

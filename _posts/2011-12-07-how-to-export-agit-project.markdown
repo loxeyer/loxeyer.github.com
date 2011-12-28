@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 如何导出一个git项目 
-tags: [git]
+tags: [tech]
 ---
 
 如何像svn export一样导出一个项目呢？
