@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 高情商者的十大习惯(译)
-tags: [english,EQ,翻译]
+tags: [english]
 ---
 
 ####1. Label their feelings, rather than labelling people or situations.

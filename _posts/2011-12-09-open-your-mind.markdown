@@ -1,7 +1,7 @@
 ---
 layout: post
 title: open your mind open your heart 
-tags: [life]
+tags: [english]
 ---
 
 As a computer programmar,he should understand how share knowledge,and warn himself open share mind now and forever.
