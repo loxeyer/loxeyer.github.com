@@ -3,17 +3,7 @@ layout: tag
 title: english
 tab: english
 ---
-{% assign posts = site.tags['english'] %}
-{% include archive.html 	%}
 
-{% assign category_posts = site.categories.english %}
+{% assign posts = site.posts %}
+{% include archive.html %}
 
-
-{% include category_page.textile %}
-
-{% for post in category_posts }
-
-{{ post.date | date:“%Y-%m-%d” }}
-{{ post.title }}
-
-{ endfor %}
