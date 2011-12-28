@@ -1,9 +1,7 @@
 ---
-layout: tag 
-title: english
-tab: english
+layout: page
+title: Archive
+tab: archive
 ---
-
-{% assign posts = site.posts %}
+{% assign posts = site.tags[page.tag] %}
 {% include archive.html %}
-
