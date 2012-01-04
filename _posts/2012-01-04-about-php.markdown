@@ -1,0 +1,105 @@
+---
+layout: post
+title: php几点注意事项
+tags: [tech]
+---
+
+##为什么要谨慎使用PHP中的常量 
+
+Zend Framework文档中写道:
+
+常量包含数字字母字符和下划线，数字允许作为常量名。 常量名的所有字母必须大写。 
+
+'''类常量必须通过 "const" 定义为类的成员，强烈不鼓励使用 "define" 定义的全局常量。''' 
+
+作为PHP的官方框架，为什么会有这样的要求？
+
+让我们一起分析一下吧
+
+### 1，define容易产生意想不到的错误
+
+
+PHP常量是定义后就不能修改和再次赋值。但是如果再次赋值会怎么样？
+{% highlight console%}
+  <?php
+  define('C', 12345);
+  define('C', 123);
+  ?>
+{% endhighlight %}
+这段代码会报个notice错误。带来的后果是：在你定义之前，其它人要是定义了同名的常量，你可能真的不知道里面究竟是什么值。
+
+
+### 2、如何判断PHP常量是否被定义？判断方法易写错
+
+
+  <?php
+  define('C', 12345);
+  // 错误方法1，经常犯
+  if (isset(C)){……}
+  // 错误方法2，经常犯
+ if (defined(C)){……}
+  // 正确方法
+  if (defined('C')){……}
+  ?>
+
+### 3、执行效率低 
+
+  <?php
+    define('FORUM_THEME',$forum['theme']); 
+    $this->display('/'.FORUM_THEME.'@Public:login');  
+    //  系统会从整个执行流程中查找FORUM_THEME
+  ?>
+因为php处理常量的时候要进行多次查找，所以效率低。
+
+总结：PHP常量的问题，在于PHP处理常量的方法过于宽松导致的，如果能够严格一些，就会避免很多的问题。在实际过程，能用变量就不要用常量，因为变量的效率高使用更加方便。
+
+因此
+
+但若非要使用常量或者类变量，可使用以下方法：
+
+  <?php
+  class foo {
+    const WEBSITE = "www.belink.com";
+    protected $_forum_theme;
+    function name()
+    {
+        echo WEBSITE;
+        $this->_forum_theme = $forum['theme'];
+    }
+    function displace() 
+    {
+       echo $this->_forum_theme;
+    }
+  }
+##类名和函数名相同时的作用
+
+在PHP4中，类的构造函数需要和类名相同。
+
+子类的构造函数名与子类名相同
+
+在子类里父类的构造函数不会自动执行。
+
+要在子类里执行父类的构造函数，必须执行类似以下语句：
+
+$this->[父类的构造函数名()]
+
+在 PHP5.0 以上版本里，统一使用__construct()作为构造函数，但仍兼容了 4.0 版本的构造函数的定义规则。如果同时定义了4.0的构造函数和 __construct()函数，则__construct() 函数优先。
+
+
+##用PHP EOL来替换/r/n进行换行 
+         
+写程序时会经常用到换行，用PHP内置常量PHP_EOL来进行换行。
+
+一个小小的换行，在不同的平台有着不同的实现。
+
+在unix世界换行就用\n来代替，但是windows为了体现他的不同，就用\r\n，更有意思的是在mac中用\r
+
+因此unix系列用 \n
+
+windows系列用 \r\n
+
+mac用 \r
+
+因此系统会根据平台系统的不同，转换成不同的换行。
+
+如果要在浏览器中换行，就要使用<nowiki><br></nowiki>进行换行

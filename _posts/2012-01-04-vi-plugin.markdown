@@ -1,0 +1,40 @@
+---
+layout: post
+title: 晒一下vi的插件
+tags: [tech]
+---
+
+### 我的vi插件： 
+
+注释，项目管理，函数断点，自动完成，日历等等
+
+/plugin
+  acp.vim  calendar.vim  comments.vim  exec_menuitem.vim  fs_menu.vim  neocomplcache.vim  NERD_tree.vim  taglist.vim  zencoding.vim
+
+/autoload
+  acp.vim  zencoding.vim
+
+.vimrc的设置如下
+
+nnoremap <silent> <F7> :NERDTreeToggle<CR>
+nnoremap <silent> <F8> :TlistToggle<CR>
+let Tlist_Show_One_File = 1
+let Tlist_Exit_OnlyWindow = 1
+let Tlist_Use_Right_Window = 1
+
+nnoremap <silent> <F9> :Calendar<CR>
+let g:calendar_diary="/data/diary/"
+syntax on
+set nu
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set cindent
+
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType c set omnifunc=ccomplete#Complete
