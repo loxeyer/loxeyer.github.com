@@ -31,6 +31,7 @@ PHP常量是定义后就不能修改和再次赋值。但是如果再次赋值�
 
 ### 2、如何判断PHP常量是否被定义？判断方法易写错
 
+{% highlight console%}
 
   <?php
   define('C', 12345);
@@ -42,13 +43,16 @@ PHP常量是定义后就不能修改和再次赋值。但是如果再次赋值�
   if (defined('C')){……}
   ?>
 
+{% endhighlight %}
 ### 3、执行效率低 
 
+{% highlight console%}
   <?php
     define('FORUM_THEME',$forum['theme']); 
     $this->display('/'.FORUM_THEME.'@Public:login');  
     //  系统会从整个执行流程中查找FORUM_THEME
   ?>
+{% endhighlight %}
 因为php处理常量的时候要进行多次查找，所以效率低。
 
 总结：PHP常量的问题，在于PHP处理常量的方法过于宽松导致的，如果能够严格一些，就会避免很多的问题。在实际过程，能用变量就不要用常量，因为变量的效率高使用更加方便。
@@ -57,9 +61,10 @@ PHP常量是定义后就不能修改和再次赋值。但是如果再次赋值�
 
 但若非要使用常量或者类变量，可使用以下方法：
 
+{% highlight console%}
   <?php
   class foo {
-    const WEBSITE = "www.belink.com";
+    const WEBSITE = "www.zhuyinghao.com";
     protected $_forum_theme;
     function name()
     {
@@ -71,6 +76,7 @@ PHP常量是定义后就不能修改和再次赋值。但是如果再次赋值�
        echo $this->_forum_theme;
     }
   }
+{% endhighlight %}
 ##类名和函数名相同时的作用
 
 在PHP4中，类的构造函数需要和类名相同。

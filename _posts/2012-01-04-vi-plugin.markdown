@@ -9,13 +9,16 @@ tags: [tech]
 注释，项目管理，函数断点，自动完成，日历等等
 
 /plugin
+
   acp.vim  calendar.vim  comments.vim  exec_menuitem.vim  fs_menu.vim  neocomplcache.vim  NERD_tree.vim  taglist.vim  zencoding.vim
 
 /autoload
+
   acp.vim  zencoding.vim
 
 .vimrc的设置如下
 
+{% highlight console%}
 nnoremap <silent> <F7> :NERDTreeToggle<CR>
 nnoremap <silent> <F8> :TlistToggle<CR>
 let Tlist_Show_One_File = 1
@@ -38,3 +41,4 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
+{% endhighlight %}
