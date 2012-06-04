@@ -1,0 +1,39 @@
+---
+layout: post
+title: Build my own LFS(NOTE) 
+tags: [life]
+---
+###The primary target architecture of LFS is the 32-bit Intel CPU.
+The computer bit commond is arch or uname -a 
+
+###Standards
+The structure of LFS follows Linux standards as closely as possible. The primary standards are:
+
+#### POSIX.1-2008.
+
+POSIX 表示可移植操作系统接口（Portable Operating System Interface ，缩写为 POSIX 是为了读音更像 UNIX）
+
+#### Filesystem Hierarchy Standard (FHS)
+
+规范在根目录(/)及子目录(/usr, /var)下面各个主要目录应该放什么样的文件
+
+#### Linux Standard Base (LSB) Core Specification 4.0
+
+The LSB has five separate standards: Core, C++, Desktop, Runtime Languages, and Printing. 
+
+
+###Before building an LFS system, we recommend reading the following HOWTOs:
+
+• Software-Building-HOWTO http://www.tldp.org/HOWTO/Software-Building-HOWTO.html
+
+This is a comprehensive guide to building and installing “generic” Unix software packages under Linux.
+Although it was written some time ago, it still provides a good summary of the basic techniques needed to build
+and install software.
+
+• The Essential Pre-Reading Hint http://www.linuxfromscratch.org/hints/downloads/files/essential_prereading.txt
+
+This is an LFS Hint written specifically for users new to Linux. It includes a list of links to excellent sources of
+information on a wide range of topics. Anyone attempting to install LFS should have an understanding of many
+of the topics in this hint.
+
+
