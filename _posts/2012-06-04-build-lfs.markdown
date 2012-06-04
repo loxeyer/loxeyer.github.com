@@ -55,4 +55,4 @@ Autoconf, Automake, and Libtool
 
 
 
-[LFS手册下载pdf](http//www.zhuyinghao.com/upload/lfs.pdf)
+[LFS手册下载pdf](/upload/lfs.pdf)
