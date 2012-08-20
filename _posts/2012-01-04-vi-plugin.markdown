@@ -4,7 +4,8 @@ title: 晒一下vi的插件
 tags: [tech]
 ---
 
-### 我的vi插件： 
+### 我的vi插件： [Download](/upload/vim.tar.gz)
+
 
 注释，项目管理，函数断点，自动完成，日历等等
 

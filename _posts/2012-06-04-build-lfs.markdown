@@ -53,6 +53,10 @@ Building and Installing Software Packages for Linux
 
 Autoconf, Automake, and Libtool
 
+###Note
+For experienced users, other partitioning schemes are possible. The new LFS system can be on a software
+RAID array or an LVM logical volume. However, some of these options require an initramfs, which is an
+advanced topic. These partitioning methodologies are not recommended for first time LFS users.
 
 
 [LFS手册下载pdf](/upload/lfs.pdf)
