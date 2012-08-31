@@ -4,7 +4,7 @@ title: Object C 和 PHP多态对比
 tags: [tech]
 ---
 
-### 什么是多态(polymorphism)
+## 什么是多态(polymorphism)
 
 polymorphism = poly(多的)+morphism(形态，即form的变体)
 
@@ -12,7 +12,7 @@ polymorphism = poly(多的)+morphism(形态，即form的变体)
 
 比如pk360是战争之王的一个接口，而qq,xiaomi,baidu是他的SB对手，打架的结局也是不一样的，结局概括为输,羸,两败俱伤和全是胜者
 
-####1,PHP多态实例 
+##1,PHP多态实例 
 
 {% highlight console%}
 <?php 
@@ -61,9 +61,9 @@ pk360(new Baidu());
 ?>
 {% endhighlight %}
 
-#### 2、Object 多态实例
+## 2、Object 多态实例
 
-####SB.h
+###SB.h
 
 {% highlight console%}
 #import <Foundation/Foundation.h>
@@ -74,7 +74,7 @@ pk360(new Baidu());
 @end
 {% endhighlight %}
 
-####SB.m
+###SB.m
 
 {% highlight console%}
 #import "SB.h"
@@ -85,7 +85,7 @@ pk360(new Baidu());
 @end
 {% endhighlight %}
 
-####QQ.h
+###QQ.h
 
 {% highlight console%}
 #import "SB.h"
@@ -95,7 +95,7 @@ pk360(new Baidu());
 @end
 {% endhighlight %}
 
-####QQ.m
+###QQ.m
 
 {% highlight console%}
 #import "QQ.h"
@@ -107,7 +107,7 @@ pk360(new Baidu());
 @end
 {% endhighlight %}
 
-####Xiaomi.h
+###Xiaomi.h
 
 {% highlight console%}
 #import "SB.h"
@@ -117,7 +117,7 @@ pk360(new Baidu());
 @end
 {% endhighlight %}
 
-####Xiaomi.m
+###Xiaomi.m
 
 {% highlight console%}
 #import "Xiaomi.h"
@@ -129,7 +129,7 @@ pk360(new Baidu());
 @end
 {% endhighlight %}
 
-####Baidu.h
+###Baidu.h
 
 {% highlight console%}
 #import "SB.h"
@@ -139,7 +139,7 @@ pk360(new Baidu());
 @end
 {% endhighlight %}
 
-####Baidu.m
+###Baidu.m
 
 {% highlight console%}
 #import "Baidu.h"
@@ -151,7 +151,7 @@ pk360(new Baidu());
 @end
 {% endhighlight %}
 
-####main.m
+###main.m
 
 {% highlight console%}
 
