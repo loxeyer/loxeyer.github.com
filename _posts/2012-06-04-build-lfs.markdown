@@ -3,6 +3,7 @@ layout: post
 title: Build my own LFS(NOTE) 
 tags: [life]
 ---
+##LFS是为了服务器安全需要，定制的LINUX系统
 ###The primary target architecture of LFS is the 32-bit Intel CPU.
 The computer bit commond is arch or uname -a 
 
