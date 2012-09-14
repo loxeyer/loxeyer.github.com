@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Diaoyu island in my eyes 
+title: Diaoyu island belongs to China 
 tags: [tech]
 ---
 
