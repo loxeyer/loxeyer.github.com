@@ -1,11 +1,9 @@
 ---
 layout: post
-title: Captain!my Captain! 
+title: O Captain!my Captain! 
 tags: [life]
 ---
-###O Captain! My Captain!
-
-####Walt Whitman
+###Walt Whitman
 
 O Captain! my Captain! our fearful trip is done,
 
