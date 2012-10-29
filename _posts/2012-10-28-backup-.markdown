@@ -1,0 +1,75 @@
+---
+layout: post
+title: 一些备份
+tags: [tech]
+---
+
+###Install phpize
+
+centos 6 sh: phpize: command not found
+
+yum -y install php-devel
+
+
+### Install Pdo
+
+pecl search pdo
+
+sudo pecl install pdo
+
+sudo pecl install pdo_mysql
+
+在etc/php.d里添加pdo_mysql.ini
+
+
+安装好php和mysql之后，出现mysql has gone，很有可能是时区没有设置，设置php.ini 的date.timezone=PRC 
+
+
+###有用的linux命令
+
+scp -r /data/backup/shell/* root@192.168.1.52:/opt/shell
+
+scp -r root@192.168.1.52:/opt/shell /data/backup/
+
+关闭防火墙: /etc/init.d/iptables stop
+防火墙端口:sudo ufw allow 80
+
+查看端口号:    netstat -tulpn | grep :9000
+
+文件大小: du -sh *
+
+回滚svn:
+svn merge -r 28:25 file.name
+
+
+命令行模式下的命令：
+
+移到行首：home键或者ctrl+A
+反向删除：ctrl+D
+
+
+按行替换：
+
+
+sed -i "s/ab/cd/g" 'grep ab -rl *'
+
+
+开启和关闭cgi:
+spawn-fcgi -a 127.0.0.1 -p 9000 -C 10 -u www-data -f /usr/bin/php-cgi
+
+pkill -9 php-cgi
+
+###下载多部电影
+
+{% highlight console%}
+#!/bin/sh
+for i in $(seq 26); do
+#wget -P one http://file.rrting.com/allfile/english/ppyy/lsxyy/lsxxyydyc/$i.mp3
+#wget -P two http://sound.tingroom.com/english57sd/lesson/laisxtwo/sound/lesson$i.mp3 
+wget -P voawords http://file.rrting.com/allfile/english/gbyy/voams/voamsyy1500jcdc/$i.mp3
+done; 
+
+{% endhighlight %}
+
+### goagent： [Download](/upload/goagent.tar.gz)
+### 喜欢的图片： [Download](/upload/pic.tar.gz)
