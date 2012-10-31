@@ -4,6 +4,25 @@ title: 一些备份
 tags: [tech]
 ---
 
+###英语听力资料
+
+http://www.rrting.com/English/yingyutingli/
+
+
+###ubuntu下载地址
+
+http://mirrors.163.com/ubuntu-releases/
+
+###内部平台模板trustgo
+
+http://enstyled.com/adminium/page.html#
+
+###苹果开发笔记及学习流程图
+
+http://www.cocoachina.com/bbs/read.php?tid=73570&page=26
+
+http://www.cocoachina.com/special/fornew.html
+
 ###Install phpize
 
 centos 6 sh: phpize: command not found
