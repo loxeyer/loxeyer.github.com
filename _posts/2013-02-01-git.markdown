@@ -1,0 +1,19 @@
+---
+layout: post
+title: Git 
+tags: [tech]
+---
+
+GIT两个UI工具,命令：
+
+{% highlight console%}
+git citool
+git gui
+gitk
+{% endhighlight %}
+
+
+git stash：用branch解决紧急任务切换的问题，其实stash命令也可以很好的解决这样的问题。当你不想提交当前完成了一半的代码，但是却不得不修改一个紧急Bug，那么使用'git stash'就可以将你当前未提交到本地（和服务器）的代码推入到Git的栈中，这时候你的工作区间和上一次提交的内容是完全一样的，所以你可以放心的修 Bug，等到修完Bug，提交到服务器上后，再使用'git stash apply'将以前一半的工作应用回来。也许有的人会说，那我可不可以多次将未提交的代码压入到栈中？答案是可以的。当你多次使用'git stash'命令后，你的栈里将充满了未提交的代码，这时候你会对将哪个版本应用回来有些困惑，'git stash list'命令可以将当前的Git栈信息打印出来，你只需要将找到对应的版本号，例如使用'git stash apply stash@{1}'就可以将你指定版本号为stash@{1}的工作取出来，当你将所有的栈都应用回来的时候，可以使用'git stash clear'来将栈清空
+
+
+ git format-patch：当你想给一个开源项目（例如Rails）提交一段代码的时候，或者你想给小组成员展示一段你并不想提交的代码，那么你还是需要 patch的，Git的'format-patch'命令良好的支持了这个功能。我来基本描述一下使用这个命令的步骤和方法：第一，利用branch命令创建一个分支；第二，修改你的代码；第三，在该分支上提交你的修改；第四，使用'git format-patch'命令来生成一个patch文件，例如：'git format-patch master --stdout > ~/Desktop/tmp.patch'就是将工作分支与master主干的不同，存放在'~/Desktop'文件夹下，生成一个叫做 tmp.patch的文件（另一种简单的版本是利用diff命令，例如'git diff ..master > ~/Desktop/tmp.patch'），这样就生成了patch文件。那么别人就可以使用'git apply'命令来应用patch，例如'git apply ~/Desktop/tmp.patch'就是将patch打在当前的工作分支上

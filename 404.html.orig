@@ -1,0 +1,14 @@
+---
+layout: page
+title: 404 Page Not Found
+---
+<p>
+<<<<<<< HEAD
+Hi,
+This is a error test.
+=======
+Hi,tony
+>>>>>>> test
+
+  The page you are looking for is nowhere to be found.
+</p>
