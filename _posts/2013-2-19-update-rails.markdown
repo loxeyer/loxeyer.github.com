@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 在MAC下升级到最新的稳定或者beta版本
+title: 切换rails版本
 tags: [tech]
 ---
 
@@ -26,14 +26,6 @@ Rails 3.2.11
 $ rvm get latest
 $ rvm reload
 $ rvm -v
-{% endhighlight %}
-
-###升级ruby
-
-{% highlight console%}
-$ rvm install ruby-1.9.3-p385
-$ rvm --default use ruby-1.9.3-p385
-$ ruby -v
 {% endhighlight %}
 
 ###升级ruby
