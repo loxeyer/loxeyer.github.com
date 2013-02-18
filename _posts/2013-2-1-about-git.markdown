@@ -37,3 +37,13 @@ git log -3
 git reset --hard xxx(版本号)
 
 git reset --hard d35bea4344982d75623acc8205fdfff2e12469ee
+
+
+###Your branch is ahead of 'origin/master' by 1 commit 
+
+
+出现此信息是因为本地仓库比远程仓库多一个提交COMMIT
+
+git push origin master之后，再用git staus
+
+仓库正常
