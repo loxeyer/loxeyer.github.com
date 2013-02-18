@@ -4,8 +4,6 @@ title: 数据底层架构-rails（二）
 tags: [tech]
 ---
 
-##从四层架构看数据库层
-
 ###用户层
 
 HTML5的manifest,localStorage；php中的smarty，rails中的runtime机制都是在用户层来提高访问性能。
