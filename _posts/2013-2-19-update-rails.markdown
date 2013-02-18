@@ -46,6 +46,7 @@ $ ruby -v
 $ rvm gemset create rails-3.2.12
 $ rvm --default use ruby-1.9.3-p385@rails-3.2.12
 $ gem install rails -v ">=3.2.12"
+$ rvm --default use ruby-1.9.3-p385@global
 {% endhighlight %}
 
 此时rails版本升到3.2.12成功！！！
