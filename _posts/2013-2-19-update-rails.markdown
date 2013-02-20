@@ -65,5 +65,12 @@ $ rvm pkg install iconv
 $ rvm pkg install openssl
 {% endhighlight %}
 
+
+如果系统自带ruby1.8.7，直接暴力删除即可。
+
+{% highlight console%}
+$ which ruby
+{% endhighlight %}
+
 参考:
 <http://railsapps.github.com/installing-rails.html>
