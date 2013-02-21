@@ -8,8 +8,6 @@ tags: [tech]
 
 查看当前ruby和rails版本
 
-
-
 {% highlight console%}
 $ ruby -v
 $ rails -v
@@ -56,7 +54,7 @@ $ rvm --default use ruby-1.9.3-p385@global
 {% highlight console%}
 $ rvm list known
 $ rvm gemset list
-$ rvm gem list
+$ gem list
 {% endhighlight %}
 
 如果配合passenger时可能会出现sha1报错，重新安装ruby前先安装下面两个组件
@@ -70,6 +68,21 @@ $ rvm pkg install openssl
 
 {% highlight console%}
 $ which ruby
+{% endhighlight %}
+
+安装ri手册
+{% highlight console%}
+gem install rdoc-data
+rdoc-data --install  
+{% endhighlight %}
+
+安装时报warning: Insecure world writable dir /xxx, mode 041777错， 
+运行下面命令可解决
+
+{% highlight console%}
+$ source /etc/profile 
+$ rvm get latest
+$ gem install rails -v ">=3.2.12"
 {% endhighlight %}
 
 参考:
