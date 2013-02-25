@@ -43,3 +43,40 @@ autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
 {% endhighlight %}
+
+mac配置：
+
+{% highlight console%}
+
+let mapleader = ","
+let g:mapleader = ","
+
+map <leader>w :w!<cr>
+
+map <leader>n :NERDTreeToggle<cr>
+map <leader>t :TlistToggle<CR>
+
+vmap "+y :w !pbcopy<CR><CR> 
+nmap "+p :r !pbpaste<CR><CR>
+
+let Tlist_Show_One_File = 1
+let Tlisj_Exit_OnlyWindow = 1
+let Tlist_Use_Right_Window = 1
+
+syntax on
+set nu
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set cindent
+set nobackup
+
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType c set omnifunc=ccomplete#Complete
+
+{% endhighlight %}
