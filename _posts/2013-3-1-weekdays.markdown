@@ -1,6 +1,6 @@
 ---
 layout: post
-title:星期名称由来与诸神 
+title: 星期名称由来与诸神 
 tags: [english]
 ---
 
