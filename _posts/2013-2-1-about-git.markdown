@@ -47,3 +47,6 @@ git reset --hard d35bea4344982d75623acc8205fdfff2e12469ee
 git push origin master之后，再用git staus
 
 仓库正常
+
+参考：
+<http://pcottle.github.com/learnGitBranching/?demo>
