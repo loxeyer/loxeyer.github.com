@@ -80,3 +80,7 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
 
 {% endhighlight %}
+
+对齐插件：
+
+http://vimcasts.org/episodes/aligning-text-with-tabular-vim/

@@ -16,6 +16,8 @@ tags: [english]
 周日 伤，Sunday Sun 意思是 太阳 = 日 
 {% endhighlight %}
 
+![贝奥武夫](/images/beiaowufu.jpg)
+
 ###星期与神的关系 
 
 古巴比伦人建造七星坛祭祀星神。七星坛分7层每层有1个星神从上到下依次为日、月、火、水、木、金、土7个神。
@@ -63,6 +65,12 @@ Thursday 星期四：Thursday在古英文中意思是Thor's day。Thor是北欧�
 Friday 星期五：Friday在古英文中意思是Frigg's day。Frigg是北欧神话中主司婚姻和生育的女神, 也是Woden的妻子。相传她平日身披闪耀白长袍, 住在水晶宫中, 和侍女们一起编织五颜六色的彩云。 对于北欧人而言, 星期五是幸运的日子。然而对基督徒来说却是相反的, 因为耶稣受难日正好是星期五。 
 
 Saturday 星期六：这是一星期中最后一天，它是由掌管农业之神，罗马主神朱庇特的父亲（the god of Agriculture, father of Jupiter）Saturn的名字命名的，也是英语直接用罗马神话中神名来命名星期名称的唯一的一天，其余几天则是以北欧神话中的神名来命名的。
+
+推荐北欧电影：
+
+尼伯龙根的指环 
+
+贝奥武夫
 
 参考:
 <http://w.xdf.cn/question-332308.html>
