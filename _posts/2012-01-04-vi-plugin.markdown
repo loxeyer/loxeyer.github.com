@@ -44,23 +44,26 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
 {% endhighlight %}
 
-mac配置：
+###mac配置：
 
 {% highlight console%}
 
-let mapleader = ","
-let g:mapleader = ","
 
-map <leader>w :w!<cr>
+"map <leader>nn :NERDTreeToggle <CR>
+map <silent> <F1> :NERDTreeToggle <CR>
+map <silent> <F2> :TlistToggle <CR>
 
-map <leader>n :NERDTreeToggle<cr>
-map <leader>t :TlistToggle<CR>
+vmap y :w !pbcopy<CR><CR>
+nmap yy :.w !pbcopy<CR><CR>
+nmap p :r !pbpaste<CR><CR>
 
-vmap "+y :w !pbcopy<CR><CR> 
-nmap "+p :r !pbpaste<CR><CR>
+
+"left menu auto explod command
+"autocmd vimenter * NERDTree
+"autocmd vimenter * wincmd p  
 
 let Tlist_Show_One_File = 1
-let Tlisj_Exit_OnlyWindow = 1
+let Tlist_Exit_OnlyWindow = 1
 let Tlist_Use_Right_Window = 1
 
 syntax on
@@ -69,6 +72,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set cindent
+
 set nobackup
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
@@ -81,6 +85,23 @@ autocmd FileType c set omnifunc=ccomplete#Complete
 
 {% endhighlight %}
 
-对齐插件：
+###对齐插件：
 
 http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
+
+### mac下安装command-t
+
+不想用macvim，但系统自带的vim不支持ruby，所以需要重新编译vim, 嫌麻烦还是直接用brew进行安装吧
+
+切换ruby版本并安装：
+
+{% highlight console%}
+sudo port -v install vim +ruby +python +huge
+{% endhighlight %}
+
+进入vi测试一下:ruby 1
+
+不再提示Sorry, the command is not available in this version
+
+然后按照command-t教程安装即可
+
