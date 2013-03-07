@@ -64,12 +64,27 @@ svn merge -r 28:25 file.name
 命令行模式下的命令：
 
 移到行首：home键或者ctrl+A
+移到行尾：ctrll+E
 反向删除：ctrl+D
+
+== 格式化当前行
+
+
+ctrl+6 编辑上次打开的文件，即缓冲区
+ctrl+o 编辑上次的地方
+
+gf 跳转文件
+
+
+折叠：zf% 折叠括号内容
 
 
 按行替换：
 
 sed -i "s/ab/cd/g" 'grep ab -rl *'
+
+rails.vim使用Rcontroller Rmodel Rinit Renv Rlib
+光标定义在def上gf跳转到view
 
 
 如果我们想快速查找当前光标下的字符串，怎么办呢？
