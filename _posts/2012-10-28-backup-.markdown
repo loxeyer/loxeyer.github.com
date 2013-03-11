@@ -82,6 +82,8 @@ gf 跳转文件是在command-t插件下应用的
 
 折叠：zf% 折叠括号内容
 
+删除一个单词daw,delete around word
+删除并插入单词ci"或ci',ci)即change inside ""
 
 按行替换：
 
