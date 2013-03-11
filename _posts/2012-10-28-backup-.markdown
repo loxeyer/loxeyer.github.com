@@ -73,7 +73,11 @@ svn merge -r 28:25 file.name
 ctrl+6 编辑上次打开的文件，即缓冲区
 ctrl+o 编辑上次的地方
 
-gf 跳转文件
+gf 跳转文件是在command-t插件下应用的
+
+跳转程序还可用ctrl+] 
+首先要装ctags，及在当前项目应用ctags -R --exclude=.git --exclude=log
+
 
 
 折叠：zf% 折叠括号内容
