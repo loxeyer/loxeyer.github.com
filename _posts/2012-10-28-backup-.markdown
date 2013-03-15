@@ -78,12 +78,12 @@ gf 跳转文件是在command-t插件下应用的
 跳转程序还可用ctrl+] 
 首先要装ctags，及在当前项目应用ctags -R --exclude=.git --exclude=log
 
-
-
 折叠：zf% 折叠括号内容
 
 删除一个单词daw,delete around word
 删除并插入单词ci"或ci',ci)即change inside ""
+
+ctrl+x ctrl+o输入语言关键字
 
 按行替换：
 
