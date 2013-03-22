@@ -1,0 +1,23 @@
+---
+layout: post
+title: 使用ruby-fog连接Eucalyptus 
+tags: [tech]
+---
+
+###使用fog连接Eucalyptus的报错
+
+{% highlight console%}
+ruby-1.9.2-p320/gems/excon-0.20.1/lib/excon/middlewares/expects.rb:10:in `response_call': 403 Forbidden</Code><Message>Message was generated in the future (times in UTC): Timestamp=2013-03-22T04:14:29Z</Message></Error></Errors><RequestID>Message was generated in the future (times in UTC): Timestamp=2013-03-22T04:14:29Z</RequestID></Response>", :headers=>{"Content-Type"=>"text/plain; charset=UTF-8"}, :status=>403, :remote_ip=>"10.68.19.40"}, @body="<?xml version=\"1.0\"?><Response><Errors><Error><Code>403 Forbidden => Message was generated in the future (times in UTC): Timestamp=2013-03-22T04:14:29Z (Fog::Compute::AWS::Error)
+{% endhighlight %}
+
+
+###解决方案
+
+sudo ntpdate -u 0.pool.ntp.org
+
+准确时间的服务器然后通过一种协议来同步我们的系统时间,那么这个协议就是NTP
+
+由于ntpdate是跳变，而不是使时间变快或变慢，依赖时序的程序会出错（例如，如果ntpdate发现你的时间快了，则可能会经历两个相同的时刻，对某些应用而言，这是致命的）。
+
+服务器慎用此命令，可用ntpd平滑过渡。
+
