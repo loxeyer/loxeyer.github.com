@@ -48,5 +48,7 @@ git push origin master之后，再用git staus
 
 仓库正常
 
+### 比较本地与远程不同
+ git diff --stat origin >> remote.diff
 参考：
 <http://pcottle.github.com/learnGitBranching/?demo>
