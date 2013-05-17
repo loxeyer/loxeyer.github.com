@@ -1,0 +1,97 @@
+---
+layout: post
+title: puppet使用记录 
+tags: [tech]
+---
+
+现有两个ubuntu版本的虚拟机
+
+###设置DNS
+由于系统没有自动分配DNS，只能手动设置DNS
+
+在/etc/resolvconf/resolv.conf.d/base文件中添加：
+
+nameserver 192.168.0.1
+
+sudo resolvconf -u
+
+###安装ruby
+
+在两台机器上都安装ruby
+
+sudo apt-get install ruby
+
+系统会自动安装1.8.7
+
+若想装最新，更新源或者用rvm安装ruby
+
+版本老一点不影响puppet
+
+###安装puppet
+
+server:
+
+sudo apt-get install puppet puppetmaster
+
+client:
+
+apt-get install puppet
+
+###设置hostname
+
+server:
+hostname master
+
+client:
+hostname:slave
+
+###设置hosts
+
+server:
+
+127.0.1.1       master
+192.168.0.170   slave.zhuyinghao.com slave
+
+client:
+
+127.0.1.1       slave.zhuyinghao.com slave
+192.168.0.170   master.zhuyinghao.com master
+
+###启动server puppet
+
+sudo puppet master
+
+###客户端连接服务器
+
+puppetd --server master --test
+
+若报错，err: Could not request certificate: The certificate retrieved from the master does not match the agent's private key.
+先执行
+sudo puppetca -l
+sudo puppetca -s slave.zhuyinghao.com
+
+###编写脚本进行测试
+在服务端/etc/puppet/manifests建立site.pp文件
+
+node 'slave.tony.com' {
+	file {
+		"/tmp/test" :
+			content => 'hello tony',
+					mode => 0644;
+	}
+}
+
+客户端执行
+puppetd --server master --test
+
+在/tmp/下生成文件test
+有成功提示：
+notice: Finished catalog run in 0.03 seconds
+
+
+
+
+参考:
+<http://www.youtube.com/watch?v=US8ZpjgEhUg>
+<http://gzzanninghu.blog.163.com/blog/static/170583133201110163372699/>
+<http://dongxicheng.org/cluster-managemant/puppet/>

@@ -53,6 +53,8 @@ scp -r root@192.168.1.52:/opt/shell /data/backup/
 关闭防火墙: /etc/init.d/iptables stop
 防火墙端口:sudo ufw allow 80
 
+清除历史记录 history -c 
+
 查看端口号:    netstat -tulpn | grep :9000
 
 文件大小: du -sh *

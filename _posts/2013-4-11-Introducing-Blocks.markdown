@@ -94,5 +94,5 @@ Division = lambda { } # your code between the braces
 
 <% endhighlight %}
 
-{参考:
+参考:
 <http://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/18-blocks/lessons/51-new-lesson>
