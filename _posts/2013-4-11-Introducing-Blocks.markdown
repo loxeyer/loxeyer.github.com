@@ -78,7 +78,6 @@ puts addition.call(5, 6)
 
 在这里你有了它 - 一个普通的老式方法转换到一个更酷的块！你要注意了！在下一节中，我们将扩展这个问题的范围，来让你变的更牛逼。
 
-
 ###写你的块！
 
 让我们建立4个块,加减乘除。每块都应该接受两个值，执行该操作，并返回结果。我们已经为你做了更多，快点爽爽的写一下余下的例子吧。
@@ -92,7 +91,8 @@ Multiplication = lambda { } # your code between the braces
 
 Division = lambda { } # your code between the braces
 
-<% endhighlight %}
+{% endhighlight %}
+
 
 参考:
 <http://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/18-blocks/lessons/51-new-lesson>
