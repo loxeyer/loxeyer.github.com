@@ -73,6 +73,7 @@ sudo puppetca -s slave.zhuyinghao.com
 ###编写脚本进行测试
 在服务端/etc/puppet/manifests建立site.pp文件
 
+{% highlight console%}
 node 'slave.tony.com' {
 	file {
 		"/tmp/test" :
@@ -81,17 +82,22 @@ node 'slave.tony.com' {
 	}
 }
 
+{% endhighlight %}
+
 客户端执行
+
 puppetd --server master --test
 
 在/tmp/下生成文件test
+
 有成功提示：
+
 notice: Finished catalog run in 0.03 seconds
-
-
 
 
 参考:
 <http://www.youtube.com/watch?v=US8ZpjgEhUg>
+
 <http://gzzanninghu.blog.163.com/blog/static/170583133201110163372699/>
+
 <http://dongxicheng.org/cluster-managemant/puppet/>

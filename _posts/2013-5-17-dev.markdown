@@ -51,16 +51,21 @@ SCSI和SATA还有15个分区的限制。
 对大文件操作性能来说，最好选择JFS或者XFS。 如果你需要使CPU利用减到最小，更推荐JFS。 
 
 mke2fs /dev/sda1
+
 mke2fs -j /dev/sda3
 
 创建交换分区
+
 mkswap /dev/sda2 
+
 激活交换分区
+
 swapon /dev/sda2
 
 ##挂载
 
 mount /dev/sda3 /mnt/gentoo
+
 mount /dev/sda1 /mnt/gentoo/boot
 
 挂载目录需要使用bind参数，如
