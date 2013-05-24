@@ -1,0 +1,78 @@
+---
+layout: post
+title: 理解磁盘 
+tags: [tech]
+---
+
+##SCSI硬盘
+
+SCSI硬盘是采用SCSI接口的硬盘，SCSI是Small Computer System Interface（小型计算机系统接口）的缩写，使用50针接口，外观和普通硬盘接口有些相似。SCSI硬盘和普通IDE硬盘相比有很多优点：接口速度快，并且由于主要用于服务器，因此硬盘本身的性能也比较高，硬盘转速快，缓存容量大，CPU占用率低，扩展性远优于IDE硬盘，并且支持热插拔。
+
+多用于服务器
+
+##SATA
+
+SATA硬盘，即使用SATA（Serial ATA）口的硬盘又叫串口硬盘。SATA的全称是Serial Advanced Technology Attachment。
+
+普通电脑硬盘及移动硬盘基本都是SATA接口的
+
+
+##块
+
+最有名的块设备可能就是Linux系统中表示第一个IDE硬盘的/dev/sda。SCSI硬盘和Serial ATA硬盘都是/dev/sda。如果你正在使用内核里新的libata架构，即便IDE硬盘也会是/dev/sda。如果你用的是旧的设备架构，你的第一个IDE硬盘将是/dev/hda。 
+
+##分区
+
+尽管在理论上可以使用一整块磁盘来安装你的Linux系统，但是在实际中几乎从不这样做。相反，整个磁盘块设备被分割成更小、更容易管理的块设备。在x86系统中，这些被称作分区。
+
+分区有三种类型：主分区，扩展分区和逻辑分区。
+
+主分区是把自己的信息储存在MBR（主引导记录）中的分区。由于MBR非常小（512个字节），所以仅可以定义4个主分区（例如，/dev/sda1到/dev/sda4）。
+
+扩展分区是一种特殊的主分区（意味着扩展分区必须是4个可能的主分区之一），它包含着更多的分区。这种分区最初并不存在，但是由于4个主分区太少了，为了能划分更多的分区，在保持向后的兼容性的前提下扩展分区诞生了。
+
+逻辑分区是在扩展分区内部的分区。它们的定义不在MBR中，而是在扩展分区中。 
+
+独立的分区或卷有以下优点：
+
+你可以为每一个分区或卷选择最佳性能的文件系统
+如果一个有问题的工具不停地向一个分区或卷写文件，也不会把你整个系统的可用空间都用完
+如果需要，可以减少文件系统检测的时间，因为多个检测可以并行的进行（尽管这个优势在多磁盘系统上比多分区系统上更为明显）
+通过对一些分区的进行只读、nosuid（忽略setuid位）、noexec（忽略可执行位）等方式挂载，安全性会大大增强
+
+SCSI和SATA还有15个分区的限制。 
+
+使用fdisk进行分区操作
+
+##文件系统
+
+一个带日志，一个不带，个人建议，像/boot这样的分区就用ext2好了，比较快，如果是自己的系统和数据呢，可以适用ext3，也可以适用想reiserfs之类的文件系统，对于小文件的处理上，reiserfs性能较好。
+
+对大文件操作性能来说，最好选择JFS或者XFS。 如果你需要使CPU利用减到最小，更推荐JFS。 
+
+mke2fs /dev/sda1
+mke2fs -j /dev/sda3
+
+创建交换分区
+mkswap /dev/sda2 
+激活交换分区
+swapon /dev/sda2
+
+##挂载
+
+mount /dev/sda3 /mnt/gentoo
+mount /dev/sda1 /mnt/gentoo/boot
+
+挂载目录需要使用bind参数，如
+
+mount -o bind /dev /mnt/gentoo/dev
+
+挂载后重启失效
+
+查看mount文件系统类型
+
+df -Th
+
+
+参考:
+<http://www.gentoo.org/doc/zh_cn/handbook/handbook-x86.xml?full=1#fdisk>

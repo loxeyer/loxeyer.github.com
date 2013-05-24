@@ -4,6 +4,10 @@ title: gentoo使用记录
 tags: [tech]
 ---
 
+##查看cpu
+
+uname -m
+
 ##lspci
 lspci 是一个用来显示系统中所有PCI总线设备或连接到该总线上的所有设备的工具。 
 
@@ -101,8 +105,6 @@ IP地址：      192      168      0         2
 nameserver 192.168.0.1
 
 sudo resolvconf -u
-
-
 
 
 
