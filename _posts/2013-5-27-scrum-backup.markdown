@@ -4,10 +4,7 @@ title: gentoo使用记录
 tags: [tech]
 ---
 
-
 ##Scrum汇总
-
-![lspci](/images/scrum.jpg)
 
 ###定义
 
@@ -23,13 +20,21 @@ Scrum是一个迭代性、增量性的流程，适用于任何的产品开发以
 ###Scrum的特点是：
 
 Scrum是一个敏捷的流程，可用于管理和控制研发工作。
+
 Scrum是现有设计流程的总结。
+
 Scrum以团队为基础，是一种在要求迅速变化情况下迭代地、增量地开发系统和产品的方法。
+
 Scrum是一个控制由利益和需求冲突导致的混乱的流程。
+
 Scrum是改善交流并最优化合作的方式。
+
 Scrum是一种检测产品开发和生产过程中障碍并将其去除的方式。
+
 Scrum是最大化生产率的一种方法。
+
 Scrum适用于单一的项目到整个组织。Scrum可以控制并组织多件具有相关性的产品开发以及拥有超过千名开发者和执行者的项目实施过程。
+
 Scrum能让每个参与者都对自己的工作以及自己做出的贡献感到满意，并让他们感觉自己的工作已经达到最佳的水平。
 
 ###角色：
@@ -55,16 +60,23 @@ Scrum能让每个参与者都对自己的工作以及自己做出的贡献感到
 
 在Scrum团队中，ScrumOwner（产品经理）、ScrumMaster（项目经理）、Developer、需求分析师为猪类角色，而管理者、测试工程师、UI工程师、QA、客户等为鸡类角色。
 
+![lspci](/images/scrum.jpg)
 ###流程
 
-    我们首先需要确定一个Product Backlog （按优先顺序排列的一个产品需求列表），这个是由Product Owner 负责的；
-    Scrum Team根据Product Backlog列表，做工作量的预估和安排；
-    有了Product Backlog列表，我们需要通过 Sprint Planning Meeting（Sprint计划会议） 来从中挑选出一个Story作为本次迭代完成的目标，这个目标的时间周期是1~4个星期，然后把这个Story进行细化，形成一个Sprint Backlog；
-    Sprint Backlog是由Scrum Team去完成的，每个成员根据Sprint Backlog再细化成更小的任务（细到每个任务的工作量在2天内能完成）；
-    在Scrum Team完成计划会议上选出的Sprint Backlog过程中，需要进行 Daily Scrum Meeting（每日站立会议），每次会议控制在15分钟左右，每个人都必须发言，并且要向所有成员当面汇报你昨天完成了什么，并且向所有成员承诺你今天要完成什么，同时遇到不能解决的问题也可以提出，每个人回答完成后，要走到黑板前更新自己的 Sprint burn down（Sprint燃尽图）；
-    做到每日集成，也就是每天都要有一个可以成功编译、并且可以演示的版本；很多人可能还没有用过自动化的每日集成，其实TFS就有这个功能，它可以支持每次有成员进行签入操作的时候，在服务器上自动获取最新版本，然后在服务器中编译，如果通过则马上再执行单元测试代码，如果也全部通过，则将该版本发布，这时一次正式的签入操作才保存到TFS中，中间有任何失败，都会用邮件通知项目管理人员；
-    当一个Story完成，也就是Sprint Backlog被完成，也就表示一次Sprint完成，这时，我们要进行 Srpint Review Meeting（演示会议），也称为评审会议，产品负责人和客户都要参加（最好本公司老板也参加），每一个Scrum Team的成员都要向他们演示自己完成的软件产品（这个会议非常重要，一定不能取消）；
-    最后就是 Sprint Retrospective Meeting（回顾会议），也称为总结会议，以轮流发言方式进行，每个人都要发言，总结并讨论改进的地方，放入下一轮Sprint的产品需求中；
+我们首先需要确定一个Product Backlog （按优先顺序排列的一个产品需求列表），这个是由Product Owner 负责的；
+
+Scrum Team根据Product Backlog列表，做工作量的预估和安排；
+
+有了Product Backlog列表，我们需要通过 Sprint Planning Meeting（Sprint计划会议） 来从中挑选出一个Story作为本次迭代完成的目标，这个目标的时间周期是1~4个星期，然后把这个Story进行细化，形成一个Sprint Backlog；
+
+Sprint Backlog是由Scrum Team去完成的，每个成员根据Sprint Backlog再细化成更小的任务（细到每个任务的工作量在2天内能完成）；
+在Scrum Team完成计划会议上选出的Sprint Backlog过程中，需要进行 Daily Scrum Meeting（每日站立会议），每次会议控制在15分钟左右，每个人都必须发言，并且要向所有成员当面汇报你昨天完成了什么，并且向所有成员承诺你今天要完成什么，同时遇到不能解决的问题也可以提出，每个人回答完成后，要走到黑板前更新自己的 Sprint burn down（Sprint燃尽图）；
+
+做到每日集成，也就是每天都要有一个可以成功编译、并且可以演示的版本；很多人可能还没有用过自动化的每日集成，其实TFS就有这个功能，它可以支持每次有成员进行签入操作的时候，在服务器上自动获取最新版本，然后在服务器中编译，如果通过则马上再执行单元测试代码，如果也全部通过，则将该版本发布，这时一次正式的签入操作才保存到TFS中，中间有任何失败，都会用邮件通知项目管理人员；
+
+当一个Story完成，也就是Sprint Backlog被完成，也就表示一次Sprint完成，这时，我们要进行 Srpint Review Meeting（演示会议），也称为评审会议，产品负责人和客户都要参加（最好本公司老板也参加），每一个Scrum Team的成员都要向他们演示自己完成的软件产品（这个会议非常重要，一定不能取消）；
+
+最后就是 Sprint Retrospective Meeting（回顾会议），也称为总结会议，以轮流发言方式进行，每个人都要发言，总结并讨论改进的地方，放入下一轮Sprint的产品需求中；
 
 ###工具
 
@@ -76,8 +88,5 @@ Scrum能让每个参与者都对自己的工作以及自己做出的贡献感到
 
 
 参考:
-<http://www.gentoo.org/doc/zh_cn/gentoo-x86-quickinstall.xml>
 
-<http://www.gentoo.org/doc/en/handbook/handbook.xml>
-
-<http://www.gentoo.org/doc/zh_cn/handbook/handbook-x86.xml?full=1#book_part1_chap4>
+<http://pm.venusource.com/projects/create_share/wiki/Scrum%E6%B1%87%E6%80%BB>
