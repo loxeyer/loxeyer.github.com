@@ -1,10 +1,8 @@
 ---
 layout: post
-title: gentoo使用记录 
+title: Scrum汇总 
 tags: [tech]
 ---
-
-##Scrum汇总
 
 ###定义
 
