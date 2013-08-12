@@ -20,6 +20,7 @@ PCI是Peripheral Component Interconnect（外设部件互连标准）的缩写�
 像软件中的API，一个是硬件外部连接标准，一个是软件应用接口。
 
 ![lspci](/images/lspci.jpg)
+	
 
 
 ##什么是DHCP
