@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  在ubuntu下面搭建vpn服务器
+title: 在ubuntu下面搭建vpn服务器
 tags: [tech]
 ---
 

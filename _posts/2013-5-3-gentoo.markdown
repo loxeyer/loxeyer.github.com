@@ -22,7 +22,6 @@ PCI是Peripheral Component Interconnect（外设部件互连标准）的缩写�
 ![lspci](/images/lspci.jpg)
 	
 
-
 ##什么是DHCP
 
 DHCP是Dynamic Host Configuration Protocol的缩写，动态主机配置，它是TCP／IP协议簇中的一种，主要是用来给网络客户机分配动态的IP地址。
@@ -34,7 +33,6 @@ DHCP 的分配形式
 ###Automatic Allocation
 
 自动分配﹐其情形是﹕一旦 DHCP 客户端第一次成功的从 DHCP 服务器端租用到 IP 地址之后﹐就永远使用这个地址。
-
 
 ###Dynamic Allocation
 
@@ -111,8 +109,6 @@ IP地址：		192      168      0         2
 nameserver 192.168.0.1
 
 sudo resolvconf -u
-
-
 
 
 参考:
