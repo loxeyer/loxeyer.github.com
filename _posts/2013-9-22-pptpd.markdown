@@ -1,0 +1,49 @@
+---
+layout: post
+title:  在ubuntu下面搭建vpn服务器
+tags: [tech]
+---
+
+### 1,安装pptpd软件
+
+{% highlight console%}
+sudo apt-get install pptpd
+{% endhighlight %}
+
+### 2,修改/etc/pptpd.conf这个文件
+
+找到#localip 192.168.0.1和#remoteip 192.168.0.234-238,192.168.0.245这两行，把前面的#号去掉，然后保存就行了。
+
+### 3,编辑/etc/ppp/pptpd-options
+
+vi /etc/ppp/pptpd-options
+
+找到ms-dns这项，去掉前面的#号，修改成google提供的DNS，很好记哈
+
+ms-dns 8.8.8.8
+
+ms-dns 8.8.4.4
+
+### 4,添加用户和密码
+
+修改/etc/ppp/chap-secrets文件
+
+按一行四列添加账号、服务器名、密码和IP限制。即第一列是用户名，第二列是服务器名（默认写pptpd 即可，注意与 pptpd-options 文件保持一致），第三列是密码，第四列是 IP 限制（不做限制用 * ）。如创建一个名为test，密码为123，不限制登录IP的VPN账号：
+
+test pptpd 123 *
+
+### 5,修改/etc/sysctl.conf
+
+把ipv4 forward开启，方法是找到/etc/sysctl.conf这个文件里的这一行#net.ipv4.ip_forward=1后，去掉net.ipv4.ip_forward=1前面的#号，使他生效，然后保存，运行命令sysctl –p
+
+root@tony:~# sysctl -p
+
+### 6,使用iptables建立一个NAT, 用下面的命令：
+iptables -t nat -A POSTROUTING -s 192.168.0.0/24 -o eth0 -j MASQUERADE
+
+上面的24表示子网掩码，代表24个1.
+
+### 7,重启pptpd
+
+/etc/init.d/pptpd restart
+
