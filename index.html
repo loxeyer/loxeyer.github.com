@@ -11,17 +11,21 @@
   <p>您的浏览器不支持  iframe </p>
 </iframe>
 <script type="text/JavaScript">
-function reinitIframe(){
-var iframe = document.getElementById("test");
-try{
-var bHeight = iframe.contentWindow.document.body.scrollHeight;
-var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
-var height = Math.max(bHeight, dHeight);
-iframe.height = height;
-console.log(height);
-}catch (ex){}
+        function setIframeHeight(id){
+    var iframe = document.getElementById(id);
+    if(iframe){
+        var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+        if(iframeWin.document.body){
+            iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+        }
+    }
 }
-window.setInterval("reinitIframe()", 200);
+
+window.onload = function(){
+    setIframeHeight('test');
+};
+
+        
 </script>
 </body>
 </html>
