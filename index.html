@@ -6,10 +6,22 @@
 </head> 
 <body>
 
-<iframe src="https://test.bestahk.com/admin/login/index.html" width="100%" height="600" frameborder="0"
+<iframe src="https://test.bestahk.com/admin/login/index.html" width="100%" id="test" onload="this.height=100" frameborder="0"
         allowfullscreen sandbox>
   <p>您的浏览器不支持  iframe </p>
 </iframe>
-
+<script type="text/JavaScript">
+function reinitIframe(){
+var iframe = document.getElementById("test");
+try{
+var bHeight = iframe.contentWindow.document.body.scrollHeight;
+var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+var height = Math.max(bHeight, dHeight);
+iframe.height = height;
+console.log(height);
+}catch (ex){}
+}
+window.setInterval("reinitIframe()", 200);
+</script>
 </body>
 </html>
