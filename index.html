@@ -1,15 +1,39 @@
-<!DOCTYPE html>
-<html>
-<head> 
-<meta charset="utf-8"> 
-<title>7ball</title> 
-</head> 
-<body>
+---
+layout: default
+title: Home
+homepage: true
+type: post
+---
 
-<iframe src="https://test.bestahk.com/admin/login/index.html" width="100%" height="800" frameborder="0"
-        allowfullscreen sandbox>
-  <p>您的浏览器不支持  iframe </p>
-</iframe>
+{% for post in paginator.posts %}
+  <article class="post">
+    <h2><a href="{{ post.url }}" rel="bookmark permalink" title="Permanent link to this post">{{ post.title }}</a></h2>
 
-</body>
-</html>
+    {{ post.content }}
+
+    <div class="meta">
+      <div class="published">
+        Published: {{ post.date | date:'%Y-%m-%d' }}
+        &mdash;
+        <a href="{{ post.url }}#disqus_thread" title="Comments">Comments</a>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+  </article>
+{% endfor %}
+
+<div class="paging">
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+    <a href="/" class="newer"><h1>上一页</h1></a>
+    {% else %}
+    <a href="/page{{paginator.previous_page}}" class="newer"><h1>上一页</h1></a>
+    {% endif %}
+  {% endif %}
+  {% if paginator.next_page %}
+  <a href="/page{{paginator.next_page}}" class="older"><h1>下一页</h1></a></li>
+  {% endif %}
+
+  <div class="clear"></div>
+</div>
